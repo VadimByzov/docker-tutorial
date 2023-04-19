@@ -6,6 +6,7 @@ let db, dbAll, dbRun;
 
 function init() {
     const dirName = require('path').dirname(location);
+
     if (!fs.existsSync(dirName)) {
         fs.mkdirSync(dirName, { recursive: true });
     }
